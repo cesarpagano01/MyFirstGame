@@ -17,7 +17,7 @@ int main() {
     string nome;
     getline(cin, nome); // Lê a linha inteira, incluindo espaços
 
-    cout << "Olá, " << nome << "! Você esta prestes a fazer uma viagem ao fundo do mar.\n";
+    cout << "Capitão: Olá, " << nome << "! Você esta prestes a fazer uma viagem ao fundo do mar.\n";
 
     // Pergunta ao jogador para progredir
     cout << "Deseja entrar no submarino? ";
@@ -26,9 +26,9 @@ int main() {
 
     // Verifica se a resposta está correta
     if (EntrarSubmarino == "sim") {
-        cout << "Então vamos la! Aperte os cintos, vamos descer.\n";
+        cout << "Capitão: Então vamos la! Aperte os cintos, vamos descer.\n";
         } else {
-        cout << "Que pena! Nos vemos em uma proxima viagem.\n";
+        cout << "Capitão: Que pena! Nos vemos em uma proxima viagem.\n";
         return (0);
     }
 
@@ -47,31 +47,31 @@ int main() {
     std::this_thread::sleep_for(std::chrono::seconds(7));
     cout << "\033[2J\033[1;1H";
 
-    cout << "Uma viagem de submarino sempre é divertida, você ja viajou de submarino antes?";
+    cout << "Capitão: Uma viagem de submarino sempre é divertida, você ja viajou de submarino antes?";
 
     string ViagemSubmarino;
     getline(cin, ViagemSubmarino);
     if (ViagemSubmarino == "sim") {
-        cout << "Olha só! Temos um veterano entre nós! Haha.\n";
+        cout << "Capitão: Olha só! Temos um veterano entre nós! Haha.\n";
         } else {
-        cout << "Ótimo! A primeira viagem é sempre a mais emocionante!.\n";
+        cout << "Capitão: Ótimo! A primeira viagem é sempre a mais emocionante!.\n";
     }
     std::this_thread::sleep_for(std::chrono::seconds(3));
     cout << "\033[2J\033[1;1H";
 
     cout << "Você escuta um barulho forte\n";
-    cout << "Parece que o mar esta agitado não é mesmo?\n";
+    cout << "Capitão: Parece que o mar esta agitado não é mesmo?\n";
     std::this_thread::sleep_for(std::chrono::seconds(3));
 
     cout << "Você escuta o barulho forte mais uma vez e sente o submarino balançar\n";
-    cout << "Tudo bem, tudo bem... Vamos manter a calma, deve ser só algum animal maritimo dando Oi\n";
+    cout << "Capitão: Tudo bem, tudo bem... Vamos manter a calma, deve ser só algum animal maritimo dando oi\n";
     std::this_thread::sleep_for(std::chrono::seconds(7));
     cout << "\033[2J\033[1;1H";
     std::this_thread::sleep_for(std::chrono::seconds(5));
 
     cout << "Você escuta um grande estouro e a água começa a entrar no submarino\n";
-    cout << "Meu Deus, MEU DEUS! ESTÁ ENTRANDO ÁGUA, ISSO NUNCA ACONTECEU\n";
-    cout << "Estamos em perigo, o que vamos fazer?\n";
+    cout << "Capitão: Meu Deus, MEU DEUS! ESTÁ ENTRANDO ÁGUA, ISSO NUNCA ACONTECEU\n";
+    cout << "Capitão: Estamos em perigo, o que vamos fazer?\n";
     std::this_thread::sleep_for(std::chrono::seconds(7));
     cout << "\033[2J\033[1;1H";
 
@@ -101,13 +101,7 @@ int main() {
                 std::cout << "Você foi até a porta.\n";
                 // Adicione aqui a lógica relacionada à escolha da porta
                 cout << "Você quer abrir a porta\n?";
-
-                string AbrirPorta;
-                getline(cin, AbrirPorta);
-
-                 if (AbrirPorta == "sim") {
-        cout << "A porta não abre, esta emperrada.\n";
-        } else
+                break;
             case 2:
                 std::cout << "Você pegou o pé de cabra.\n";
                 // Adicione aqui a lógica relacionada à escolha do pé de cabra
